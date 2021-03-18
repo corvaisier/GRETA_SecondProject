@@ -1,0 +1,274 @@
+/* Ajout des liens vers polices */
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../fonts/caviardreams_bold-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsbold_italic';
+    src: url('../fonts/caviardreams_bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsitalic';
+    src: url('../fonts/caviardreams_italic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*variables*/
+:root{
+    --fushia: #c10880;
+    --fushia-fonce:#6a225a;
+    --gris: #e0dfdf;
+    --gris-fonce:#3e3d4b;
+}
+p{
+    margin-top: initial;
+    margin-bottom: initial;
+}
+
+body{
+    font-family: 'caviar_dreamsregular',Arial,sans-serif;
+}
+h1{
+    font-size: 1.5rem;
+}
+
+/*------------ home ------------*/
+#top-media-home{
+    background-color: var(--gris);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+#top-media-home .top-margin{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#top figure img{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+}
+#top .navbar{
+    background-color: rgba(106, 34, 90, 0.7); 
+    position: relative;
+    margin-top: 310px;
+}
+#top .nav-other{
+    margin-top: 0px;
+    background-color: var(--fushia-fonce);
+}
+#top .navbar-toggler{
+    color: black;
+    z-index: 10000;
+}
+#top .navbar p,h1,a{
+    color: white;
+}
+#top .navbar-brand{
+    display: flex;
+}
+#top .navbar-collapse{
+    padding-left: 35%;
+}
+#navbarSupportedContent .text-nav a{
+    text-align: right;
+}
+#main {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.right-icon{
+    right: 0;
+   margin-top: 20px;
+   position: fixed;
+}
+#exampleModal{
+    z-index: 10000;
+}
+#main h4{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#main .text-home{
+    display: flex;
+}
+#main .text-home img{
+    width: 90%;
+}
+#main .card{
+    background-color: var(--gris);
+}
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#footer .white-composant{
+    width: 33%;
+    padding: 30px;
+}
+#footer .white {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+}
+#footer .less-size {
+    font-size: x-small;
+}
+#footer .icon-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+#footer .white img{
+    width: 10%;
+}
+#footer .dark{
+    color: white;
+    background-color: black;
+    position: absolute;
+    z-index: 100000;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    padding: 40px;
+}
+#footer .bandeau-footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(224, 223, 223, 0.7);
+    bottom: 0;
+    width: 100%;
+}
+#footer .bandeau-footer a{
+    color: black;
+}
+ .bouton{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+ .bouton:hover{
+    color: white;
+    background-color: black;
+}
+div.modal-backdrop.fade.show{
+    display: none;
+}
+#catalog-home h4{
+    margin-left: 3%;
+}
+#catalog-home .catalog{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#catalog-home .element{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#catalog-home a{
+    text-align: center;
+}
+#catalog-home .bouton-catalog{
+    display: flex;
+    justify-content: center;
+}
+#catalog-home .pub{
+    position: relative;
+}
+#catalog-home .pub img{
+    width: 18rem;
+    height: 308px;
+    border-radius: 4px;
+}
+#catalog-home .text-pub{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-top: 20%;
+}
+#catalog-home .text-pub p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*------------ propos ------------*/
+#main-propos{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+#main-propos h4{
+text-align: center;
+}
+#main-propos .text-propos{
+    margin-bottom: 20px;
+}
+#accordion .card-header{
+    background-color: white;
+}
+#accordion .logo-propos{
+    background-color: var(--fushia);
+    margin-left: 40px;
+}
+ .accordion-footer{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+/*------------ maison ------------*/
+#main-maison{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+#main-maison h4{
+text-align: center;
+}
+#main-maison .form-maison{
+    background-color: var(--gris-fonce);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+#main-maison .form-maison form{
+    display: flex;
+    justify-content: space-around;
+}
+#main-maison form select{
+    width: 130px;
+}
