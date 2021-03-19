@@ -17,16 +17,58 @@
     <header id="top">
         <div id="top-media-home">
             <p class="top-margin">|</p>
-            <i class="fab fa-facebook-f top-margin"></i>
-            <i class="fab fa-twitter top-margin"></i>
-            <i class="fab fa-linkedin-in top-margin"></i>
-            <i class="fab fa-instagram top-margin"></i>
+            <a href="#">
+                <i class="fab fa-facebook-f top-margin"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter top-margin"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin-in top-margin"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram top-margin"></i>
+            </a>
             <p class="top-margin">|</p>
             <i class="fas fa-phone-alt top-margin"></i>
-            <p class="top-margin">0257875900</p>
+            <a href="tel:+496170961709">
+                <p class="top-margin">0257875900</p>
+            </a>
             <p class="top-margin">|</p>
             <i class="fas fa-house-user top-margin"></i>
-            <p class="top-margin">ouvrir mon projet</p>
+            <a href="#">
+                <p class="top-margin" data-toggle="modal" data-target="#headereModal">ouvrir mon projet</p>
+            </a>
+            <div class="modal fade" id="headereModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Mon compte</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Mot de passe</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <a href="#">
+                                    <button type="button" class="bouton">mot de passe oublié</button>
+                                </a>
+                                <button type="submit" class="bouton">Se connecter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p class="top-margin">|</p>
         </div>
         <figure>
@@ -45,9 +87,10 @@
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse text-nav ml-5" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost/soutenance2/index.php">Accueil <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active currentPage">
+                        <a class="nav-link " href="http://localhost/soutenance2/index.php">Accueil <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/soutenance2/Propos.php">A propos</a>
@@ -66,64 +109,66 @@
     <div class="right-icon">
         <!-- Button trigger modal -->
         <i class="fas fa-phone-alt border" data-toggle="modal" data-target="#exampleModal"></i>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Téléphone</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="tel:+496170961709">
-                            <button class="bouton">02 57 87 71 85</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
+
         <br>
 
         <!-- Button trigger modal -->
         <i class="fas fa-envelope border" data-toggle="modal" data-target="#exampleModalLong"></i>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Message</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
 
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nom</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">adresse Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
-                            </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Téléphone</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="tel:+496170961709">
+                        <button class="bouton">02 57 87 71 85</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Entrez votre message </label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn">Envoyer</button>
-                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Adresse Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Entrez votre message </label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn">Envoyer</button>
                 </div>
             </div>
         </div>

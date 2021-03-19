@@ -1,3 +1,8 @@
+<?php
+/* Récupération de l'adresse de page passée dans URL*/
+$path='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$current=basename($path);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -23,23 +28,24 @@
                     <p>Constructeur de vie</p>
                 </div>
             </a>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#SupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
-            <div class="collapse navbar-collapse text-nav ml-5" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-nav ml-5" id="SupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="http://localhost/soutenance2/index.php">Accueil <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active <?php if($current=='Propos.php'){ echo 'currentPage'; } ?>">
+                        <a class="nav-link" href="http://localhost/soutenance2/index.php">Accueil <span
+                                class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item <?php if($current=='Propos.php'){ echo 'currentPage'; } ?>">
                         <a class="nav-link" href="http://localhost/soutenance2/Propos.php">A propos</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item <?php if($current=='Maison.php'){ echo 'currentPage'; } ?>">
                         <a class="nav-link" href="http://localhost/soutenance2/Maison.php">Nos maisons</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item <?php if($current=='Contact.php'){ echo 'currentPage'; } ?>">
                         <a class="nav-link" href="http://localhost/soutenance2/Contact.php">Contact</a>
                     </li>
                 </ul>
@@ -48,65 +54,67 @@
     </header>
     <div class="right-icon">
         <!-- Button trigger modal -->
-        <i class="fas fa-phone-alt border" data-toggle="modal" data-target="#exampleModal"></i>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Téléphone</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="tel:+496170961709">
-                            <button class="bouton">02 57 87 71 85</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
+        <i class="fas fa-phone-alt border" data-toggle="modal" data-target="#Modal"></i>
+
         <br>
 
         <!-- Button trigger modal -->
-        <i class="fas fa-envelope border" data-toggle="modal" data-target="#exampleModalLong"></i>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Message</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
+        <i class="fas fa-envelope border" data-toggle="modal" data-target="#ModalLong"></i>
 
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nom</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">adresse Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1">
-                            </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Téléphone</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="tel:+496170961709">
+                        <button class="bouton">02 57 87 71 85</button>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLongTitle">Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Entrez votre message </label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn" data-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn">Envoyer</button>
-                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="FormControlInput">Nom</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlInput1">Adresse Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="FormControlTextarea1">Entrez votre message </label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn">Envoyer</button>
                 </div>
             </div>
         </div>

@@ -1,8 +1,17 @@
+<div id="header-des">
 <?php
 include("helpers/header.php")
 ?>
+</div>
+<div id="header-mob">
+<?php
+include("helpers/header-other.php")
+?>
+</div>
+
 
 <main id="main">
+    
     <section>
         <h4>Bienvenue chez Simply Home</h4>
         <div class="text-home">
