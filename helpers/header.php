@@ -33,7 +33,7 @@
             <img src="images\choisir-constructeur.jpg" alt="maison">
         </figure>
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="http://localhost/soutenance2/index.php">
                 <img src="images\simply-home-logo.png" alt="simply home logo">
                 <div class="left-nav-home">
                     <h1>Simply Home</h1>
@@ -42,12 +42,12 @@
             </a>
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color:red"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse text-nav ml-5" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="http://localhost/soutenance2/index.php">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/soutenance2/Propos.php">A propos</a>
@@ -57,7 +57,7 @@
                         <a class="nav-link" href="http://localhost/soutenance2/Maison.php">Nos maisons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="http://localhost/soutenance2/Contact.php">Contact</a>
                     </li>
                 </ul>
             </div>

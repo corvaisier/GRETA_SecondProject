@@ -138,9 +138,26 @@ include("helpers/header-other.php")
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
+    <nav aria-label="...">
+        <div class="center-nav">
+        <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Prec</a>
+                </li>
+                <li class="page-item disabled"><a class="page-link" href="#"><strong>1</strong> </a></li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">2 <span class="sr-only">2</span></a>
+                </li>
+                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Suiv</a>
+                </li>
+            </ul>
+        </div>
+            
+        </nav>
 
 
 
